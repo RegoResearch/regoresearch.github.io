@@ -1,7 +1,7 @@
 ---
 layout: post
-author: sky
 title:  "About Rego"
+author: sky
 categories: [rehabilitation]
 image: https://user-images.githubusercontent.com/56623134/67157437-16ba4d00-f367-11e9-88c1-613081af8d8c.png
 tags: [featured]
