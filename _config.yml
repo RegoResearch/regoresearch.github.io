@@ -18,7 +18,7 @@ plugins:
   - jekyll-seo-tag
   
 authors:
-    sal:
+    sky:
       name:           sky
       site:           https://regoresearch.github.io
       avatar:         assets/images/sky.PNG
