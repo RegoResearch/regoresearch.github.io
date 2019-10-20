@@ -19,7 +19,7 @@ plugins:
   
 authors:
     sal:
-      name:           Sky
+      name:           sky
       site:           https://regoresearch.github.io
       avatar:         assets/images/sky.PNG
       bio:            "Hi, I am Sky. I want to share useful information with you guys"
@@ -34,8 +34,8 @@ defaults:
       path: "_posts"
     values:
       layout: post
-      author: sal
-      avatar: /assets/images/avatar1.jpg
+      author: sky
+      avatar: assets/images/sky.PNG
       
   # all pages
   - scope:
