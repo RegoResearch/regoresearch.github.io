@@ -4,7 +4,7 @@ permalink: "/contact.html"
 ---
 
 <form action="https://formspree.io/{{site.email}}" method="POST">    
-<p class="mb-4">Please send your message to {{site.name}}. We will reply as soon as possible!</p>
+<p class="mb-4">{{site.name}}에 궁금한 사항이 있으신가요? 그렇다면 연락받을 이메일과 메시지를 남겨주세요! 가능한 빨리 답장드릴게요.</p>
 <div class="form-group row">
 <div class="col-md-6">
 <input class="form-control" type="text" name="name" placeholder="Name*" required>
