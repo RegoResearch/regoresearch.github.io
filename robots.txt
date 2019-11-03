@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: http://regoresearch.github.io/sitemap.xml
