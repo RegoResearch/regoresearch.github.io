@@ -1,6 +1,6 @@
 # Site
 name: 'Rego'
-description: 'Rego deals with rehabilitation information such as disease, hospital, and physical therapy'
+description: 'Rego는 신경마비환자들에게 재활상식, 재활병원, 재활운동 등의 다양한 정보를 제공합니다.'
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
 baseurl: ''
