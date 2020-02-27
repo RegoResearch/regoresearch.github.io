@@ -21,7 +21,7 @@ Thingy52는 세계적인 반도체 회사인 Nordic Semiconductor에서 제작�
 ## 재활운동
 ### T-Rex Jump!
 
-[![image](https://user-images.githubusercontent.com/56623134/75441517-2430b500-59a1-11ea-9fa3-a5f869fad204.png)](https://regoresearch.github.io/thingyjs/t-rex-jump.html)
+[![image](https://user-images.githubusercontent.com/56623134/75441517-2430b500-59a1-11ea-9fa3-a5f869fad204.png)](https://regoresearch.github.io/openrehab/t-rex-jump)
 
   - 운동목표
      - 팔과 어깨의 움직임 개선
