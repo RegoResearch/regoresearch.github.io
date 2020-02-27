@@ -3,8 +3,6 @@ title: "OpenRehab"
 permalink: "/openrehab.html"
 ---
 
-### OpenRehab
-
 OpenRehab (오픈리햅)은 저전력 블루투스 센서인 Thingy52를 이용해서 효과적으로 재활운동을 할 수 있는 서비스입니다. 사용자는 Thingy52 센서키트를 구매하시어, 집에서도 근력운동/균형운동/지능훈련 등을 게임을 즐기듯 편리하고 재밌게 할 수 있습니다. 그리고 "모든 운동서비스는 무료"입니다.
 
 #### Thingy52
@@ -15,10 +13,12 @@ Thingy52는 세계적인 반도체 회사인 Nordic Semiconductor에서 제작�
 
 [Thingy52 구매링크](https://kr.mouser.com/m_new/nordic-semiconductor/nordic-thingy-52)
 
+<br>
 
 -------------
 
 ### 재활운동
+<br>
 
 #### T-Rex Jump!
 
