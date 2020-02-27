@@ -72,7 +72,7 @@ class Thingy extends EventTarget {
     this.connected = false;
 
     if (this.logEnabled) {
-      console.log("I am alive!");
+      console.log("Welcome to OpenRehab!");
     }
 
     // TCS = Thingy Configuration Service
