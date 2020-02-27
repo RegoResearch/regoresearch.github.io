@@ -81,12 +81,11 @@
 
       //process accelerometer z-value
       var prev_acc_z = -1;
-      const acc_z_threshold = 28;
       const myRawDataHandler = data => {
         const accData = data.detail.accelerometer;
         var acc_z = accData.z;
 
-        if ( prev_acc_z < acc_z_threshold && acc_z > acc_z_threshold)
+        if ( prev_acc_z < 0 && acc_z > 0)
         {
           //jump
           console.log("jump");
