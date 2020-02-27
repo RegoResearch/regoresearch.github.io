@@ -80,12 +80,12 @@
       }
 
       //process accelerometer z-value
-      var prev_acc_z = -1;
+      var prev_acc_z = 1;
       const myRawDataHandler = data => {
         const accData = data.detail.accelerometer;
         var acc_z = accData.z;
 
-        if ( prev_acc_z < 0 && acc_z > 0)
+        if ( prev_acc_z > 0 && acc_z < 0)
         {
           //jump
           console.log("jump");
