@@ -12,7 +12,13 @@
   <body>
     <button id="connectBtn" class="w3-button w3-black">Connect</button>
     <br><br>
-    <center><h2 id="result"></h2></center>
+    <table>
+    <tr>
+      <td width=1000px>
+        <center><h2 id="result"></h2></center>
+      </td>
+    </tr>
+    </table>
     <table>
       <tr>
         <td width=500px>
@@ -49,9 +55,13 @@
         </td>
       </tr>
     </table>
-    
-    <br><br>
-    <center><h2 id="score"></h2></center>
+    <table>
+      <tr>
+        <td width=1000px>
+          <center><h2 id="score"></h2></center>
+        </td>
+      </tr>
+      </table>    
     <script type="module">
       import Thingy from "../index.js";
       const thingy = new Thingy({logEnabled: true});
