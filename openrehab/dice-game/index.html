@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+  <head>
+    <title>OpenRehab: Dice Game</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- Dice game -->
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dice.js"></script>
+    <link rel="stylesheet" href="dice.css" type="text/css"/>
+  </head>
+  <body>
+    <button id="connectBtn" class="w3-button w3-black">Connect</button>
+    <br><br>
+    <center><h2 id="result"></h2></center>
+    <table>
+      <tr>
+        <td width=500px>
+          <center>
+          <h3>Computer</h3>
+          <br><br>
+          <section class="container">
+            <div id="cube1">
+              <figure class="front d1 dice"><p></p></figure>
+              <figure class="back d2 dice"><p></p></figure>
+              <figure class="right d3 dice"><p></p></figure>
+              <figure class="left d4 dice"><p></p></figure>
+              <figure class="top d5 dice"><p></p></figure>
+              <figure class="bottom d6 dice"><p></p></figure>
+            </div>
+          </section>
+          </center>
+        </td>
+        <td width=500px>
+          <center>
+          <h3>You</h3>
+          <br><br>
+          <section class="container">
+            <div id="cube2">
+              <figure class="front d1 dice"><p></p></figure>
+              <figure class="back d2 dice"><p></p></figure>
+              <figure class="right d3 dice"><p></p></figure>
+              <figure class="left d4 dice"><p></p></figure>
+              <figure class="top d5 dice"><p></p></figure>
+              <figure class="bottom d6 dice"><p></p></figure>
+            </div>
+          </section>
+        </center>
+        </td>
+      </tr>
+    </table>
+    
+    <br><br>
+    <center><h2 id="score"></h2></center>
+    <script type="module">
+      import Thingy from "../index.js";
+      const thingy = new Thingy({logEnabled: true});
+
+      async function start(device) {
+        try {
+          await device.connect();
+
+          device.addEventListener("button", myButtonHandler);
+          await device.button.start();
+
+          device.addEventListener("gravityvector", myGravityHandler);
+          await device.gravityvector.start();
+
+          await device.led.write({
+            mode: "breathe",
+            color: "blue",
+            intensity: 50,
+            delay: 1000,
+          });
+
+          //if connected, it turns to green color
+          document.querySelector("#connectBtn").className = "w3-button w3-green";
+        } catch (error) {
+          console.error(error);
+        }
+      }
+
+      //process button event
+      var prev_btn = 0;
+      const myButtonHandler = data => {
+        const btnData = data.detail.value;
+        if (prev_btn == 0 && btnData == 1)
+        {
+          resetGame();
+          console.log("reset game");
+        }
+      }
+
+      //process gravity
+      var prev_dice_state = 0;
+      var dice_count = -1;
+      var initGame = true;
+      const myGravityHandler = data => {
+        const gravityData = data.detail.value;
+        
+        var x = Math.sign(gravityData.x) * (Math.abs(gravityData.x) > 8);
+        var y = Math.sign(gravityData.y) * (Math.abs(gravityData.y) > 8);
+        var z = Math.sign(gravityData.z) * (Math.abs(gravityData.z) > 8);
+
+        //Top:1, Bottom: 6
+        //East:2 West:3 South:4 North:5
+        var state_value = x*100 + y*10 + z;
+        var dice_state = 0;
+
+        switch(state_value)
+        {
+          case 1:
+            dice_state = 1;
+            break;
+          case -1:
+            dice_state = 6;
+            break;
+          case 10:
+            dice_state = 2;
+            break;
+          case -10:
+            dice_state = 3;
+            break;
+          case -100:
+            dice_state = 4;
+            break;
+          case 100:
+            dice_state = 5;
+            break;
+        }
+
+        if ( prev_dice_state == dice_state )
+          dice_count++;
+        else
+          dice_count = 0;
+
+        if ( dice_state > 0 && dice_count == 3 )
+        {
+          if (initGame == true)
+            initGame = false;
+          else
+          {
+            roll2(dice_state);
+            console.log(dice_state);
+          }
+        }
+
+        prev_dice_state = dice_state;
+      }
+      
+      document.querySelector("#connectBtn").addEventListener("click", async () => {
+        start(thingy);
+      });
+    </script>
+  </body>
+</html>
