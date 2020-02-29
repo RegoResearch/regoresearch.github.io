@@ -18,7 +18,7 @@ REGO Tools는 세계적인 반도체 회사인 Nordic Semiconductor에서 제작
 
   - REGO-DICE: 주사위 (Dice) 모양의 운동기구입니다.
 
-  - REGO-BALANCE: Balance board 형태로 균형을 잡는데 쓰이는 운동기구입니다.
+  - REGO-BALANCE: 균형을 잡는데 쓰이는 운동기구입니다.
 
 <br>
 
