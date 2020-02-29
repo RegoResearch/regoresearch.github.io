@@ -10,13 +10,15 @@ OpenRehab (오픈리햅)은 센서를 이용해서 효과적으로 재활운동�
 
 #### REGO: Tools
 
-![image](https://user-images.githubusercontent.com/56623134/75556744-1ef76700-5a82-11ea-89e5-3e3c715df07e.png)
+![image](https://user-images.githubusercontent.com/56623134/75608038-62fc7180-5b3f-11ea-8a41-4df7e47f5a51.png)
 
 REGO Tools는 세계적인 반도체 회사인 Nordic Semiconductor에서 제작한 저전력 블루투스 기반의 센서키트 Thingy52와 자체 제작한 케이스를 결합한 운동기구입니다. USB 커넥터를 통해서 자체 리튬이온 배터리를 충전할 수 있고, 디지털 마이크로폰과 스피커를 비롯해 운동센서(가속도계, 자이로스코프, 자력계를 포함한 9-축), 초저전력 웨이크업 가속도계, 압력 및 온도, 습도, 대기질, 컬러 센서 등을 포함하고 있습니다.
 
   - REGO-PUCK: 하키에서 쓰는 볼 (Puck; 퍽) 모양의 운동기구입니다.
 
   - REGO-DICE: 주사위 (Dice) 모양의 운동기구입니다.
+
+  - REGO-BALANCE: Balance board 형태로 균형을 잡는데 쓰이는 운동기구입니다.
 
 <br>
 
