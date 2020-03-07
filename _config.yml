@@ -43,6 +43,12 @@ defaults:
     values:
       layout: page
       
+  # all lectures
+  - scope:
+      path: "_lecture"
+    values:
+      layout: page      
+      
 # Syntax
 markdown: kramdown
 highlighter: rouge
