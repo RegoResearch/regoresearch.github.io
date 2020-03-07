@@ -11,7 +11,8 @@ permalink: "/categories.html"
             
         {% for category in site.categories %} 
             {% if category[0] == "장애인식개선강의" %}
-            {% continue %}            
+            {% continue %}      
+            {% endif %}
         <h4 class="font-weight-bold spanborder text-capitalize" id="{{ category[0] | downcase }}"><span>{{ category[0] }}</span></h4>
             
         {% assign pages_list = category[1] %}
