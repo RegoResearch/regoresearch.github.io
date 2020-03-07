@@ -29,7 +29,9 @@ permalink: "/disability_rights.html"
             {% for post in pages_list %}
             {% if post.title != null %}
               {% if group == null or group == post.group %}
-              {% endif %}
+
+                    {% include main-loop-card.html %}
+                {% endif %}
             {% endif %}
             {% endfor %}
             {% assign pages_list = nil %}
