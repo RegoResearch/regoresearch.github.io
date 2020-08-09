@@ -48,9 +48,9 @@
       var dice_count = -1;
       var initGame = true;
       const myHeadingHandler = data => {
-        const headingData = data.detail.value;
-        //var angle = headingData.heading;
-        console.log(data);
+        const headingData = data.detail;
+        var angle = headingData.heading;
+        console.log(angle);
       }
       
       document.querySelector("#connectBtn").addEventListener("click", async () => {
