@@ -41,6 +41,18 @@ REGO Tools는 세계적인 반도체 회사인 Nordic Semiconductor에서 제작
   - 운동기구
      - REGO-PUCK
 
+#### Donkey Jump
+
+[![image](https://user-images.githubusercontent.com/56623134/89726743-fcb63c00-da58-11ea-8bdf-8f8e6bf6b8ab.png)](https://regoresearch.github.io/openrehab/donkey-jump)
+
+  - 운동목표
+     - 손목/몸통의 회전운동
+  - 운동방법
+     - REGO-PUCK을 회전하고자 하는 부위에 붙이고 자세를 정렬합니다.
+     - 회전동작을 하면 망아지가 좌/우로 이동합니다.
+     - 망아지가 떨어지지 않고 계속 올라갈 수 있도록 회전을 반복하세요!
+  - 운동기구
+     - REGO-PUCK
 
 #### Dice Game
 
