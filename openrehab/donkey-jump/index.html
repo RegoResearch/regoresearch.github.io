@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+  <head>
+    <title>OpenRehab: Dice Game</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  </head>
+  <body>
+    <button id="connectBtn" class="w3-button w3-black">Connect</button>
+    <br><br>
+    <script type="module">
+      import Thingy from "../index.js";
+      const thingy = new Thingy({logEnabled: true});
+
+      async function start(device) {
+        try {
+          await device.connect();
+
+          device.addEventListener("heading", myHeadingHandler);
+          await device.heading.start();
+
+          await device.led.write({
+            mode: "breathe",
+            color: "blue",
+            intensity: 50,
+            delay: 1000,
+          });
+
+          //if connected, it turns to green color
+          document.querySelector("#connectBtn").className = "w3-button w3-green";
+        } catch (error) {
+          console.error(error);
+        }
+      }
+
+      //process button event
+      var prev_btn = 0;
+      const myButtonHandler = data => {
+        const btnData = data.detail.value;
+        if (prev_btn == 0 && btnData == 1)
+        {
+          //resetGame();
+          console.log("reset game");
+        }
+      }
+
+      //process gravity
+      var prev_dice_state = 0;
+      var dice_count = -1;
+      var initGame = true;
+      const myHeadingHandler = data => {
+        const headingData = data.detail.value;
+        var angle = headingData.heading;
+        console.log(angle);
+      }
+      
+      document.querySelector("#connectBtn").addEventListener("click", async () => {
+        start(thingy);
+      });
+    </script>
+  </body>
+</html>
