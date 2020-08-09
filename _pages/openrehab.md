@@ -53,6 +53,20 @@ REGO Tools는 세계적인 반도체 회사인 Nordic Semiconductor에서 제작
      - 망아지가 떨어지지 않고 계속 올라갈 수 있도록 회전을 반복하세요!
   - 운동기구
      - REGO-PUCK
+     
+#### Car Race
+
+[![image](https://user-images.githubusercontent.com/56623134/89735081-e335e400-da9a-11ea-8a17-c6721ea1e8fa.png)](https://regoresearch.github.io/openrehab/car-race)
+
+  - 운동목표
+     - 몸통의 기울이는 운동
+  - 운동방법
+     - REGO-PUCK을 명치부분에 대고 두손으로 감싼 후 자세를 정렬합니다.
+     - 몸통을 좌우로 기울이면 자동차가 좌/우로 이동합니다.
+     - 자동차가 다른 차에 부딪히지 않고 계속 나아갈 수 있도록 자세를 기울이세요!
+  - 운동기구
+     - REGO-PUCK
+
 
 #### Dice Game
 
