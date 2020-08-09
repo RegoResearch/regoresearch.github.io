@@ -54,6 +54,7 @@
       const myHeadingHandler = data => {
         const headingData = data.detail;
         var angle = headingData.heading;        
+        console.log(origin_angle - angle);
         console.log(Math.cos(origin_angle - angle));
         current_angle = angle;
       }
