@@ -17,6 +17,8 @@
         try {
           await device.connect();
 
+          device.addEventListener("button", myButtonHandler);
+          await device.button.start();
           device.addEventListener("heading", myHeadingHandler);
           await device.heading.start();
 
