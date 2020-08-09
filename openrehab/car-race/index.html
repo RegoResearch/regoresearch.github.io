@@ -16,6 +16,7 @@
 		const thingy = new Thingy({logEnabled: true});
 		var raw_angle = 0;
 		var origin_angle = 0;
+    var first_start = false;
 
 		async function start(device) {
 			try {
@@ -47,6 +48,7 @@
 			if (prev_btn == 0 && btnData == 1)
 			{
 				origin_angle = raw_angle;
+        first_start = true;
 				console.log("reset");
 			}
 		}
@@ -64,7 +66,8 @@
 			var threshold = 0.1;
 
       //press arrow up 
-      document.dispatchEvent( new KeyboardEvent("keydown", { keyCode: 38 }) );
+      if (first_start == true)
+        document.dispatchEvent( new KeyboardEvent("keydown", { keyCode: 38 }) );
 
 			if (sin_value > threshold)
 			{
