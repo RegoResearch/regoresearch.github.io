@@ -1,67 +1,182 @@
-<!doctype html>
+<!DOCTYPE HTML>
 <html>
-  <head>
-    <title>OpenRehab: Dice Game</title>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  </head>
-  <body>
-    <button id="connectBtn" class="w3-button w3-black">Connect</button>
-    <br><br>
-    <script type="module">
-      import Thingy from "../index.js";
-      const thingy = new Thingy({logEnabled: true});
-      var current_angle = 0;
-      var origin_angle = 0;
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta charset="UTF-8" />
+		<title>OpenRehab: Donkey Jump</title>
+		<meta name="description" content="RegoResearch: 망아지 점프" />
+		<link type="text/css" rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	</head>
+	<body>
+		<button id="connectBtn" class="w3-button w3-black">Connect</button>
+		<br><br>
+		<script type="module">
+		import Thingy from "../index.js";
+		const thingy = new Thingy({logEnabled: true});
+		var raw_angle = 0;
+		var origin_angle = 0;
 
-      async function start(device) {
-        try {
-          await device.connect();
+		async function start(device) {
+			try {
+			await device.connect();
 
-          device.addEventListener("button", myButtonHandler);
-          await device.button.start();
-          device.addEventListener("heading", myHeadingHandler);
-          await device.heading.start();
+			device.addEventListener("button", myButtonHandler);
+			await device.button.start();
+			device.addEventListener("heading", myHeadingHandler);
+			await device.heading.start();
 
-          await device.led.write({
-            mode: "breathe",
-            color: "blue",
-            intensity: 50,
-            delay: 1000,
-          });
+			await device.led.write({
+				mode: "breathe",
+				color: "blue",
+				intensity: 50,
+				delay: 1000,
+			});
 
-          //if connected, it turns to green color
-          document.querySelector("#connectBtn").className = "w3-button w3-green";
-        } catch (error) {
-          console.error(error);
-        }
-      }
+			//if connected, it turns to green color
+			document.querySelector("#connectBtn").className = "w3-button w3-green";
+			} catch (error) {
+			console.error(error);
+			}
+		}
 
-      //process button event
-      var prev_btn = 0;
-      const myButtonHandler = data => {
-        const btnData = data.detail.value;
-        if (prev_btn == 0 && btnData == 1)
-        {
-          origin_angle = current_angle;
-          console.log("reset game");
-        }
-      }
+		//process button event
+		var prev_btn = 0;
+		const myButtonHandler = data => {
+			const btnData = data.detail.value;
+			if (prev_btn == 0 && btnData == 1)
+			{
+				origin_angle = raw_angle;
+				document.getElementById('btnRetry').click();
+				console.log("reset game");
+			}
+		}
 
-      //process gravity
-      var prev_dice_state = 0;
-      var dice_count = -1;
-      var initGame = true;
-      const myHeadingHandler = data => {
-        const headingData = data.detail;
-        var angle = headingData.heading;        
-        console.log(origin_angle - angle);
-        console.log(Math.cos(origin_angle - angle));
-        current_angle = angle;
-      }
-      
-      document.querySelector("#connectBtn").addEventListener("click", async () => {
-        start(thingy);
-      });
-    </script>
-  </body>
+		//process gravity
+		var prev_dice_state = 0;
+		var dice_count = -1;
+		var initGame = true;
+		const myHeadingHandler = data => {
+			const headingData = data.detail;
+			raw_angle = headingData.heading;
+			var sin_value = Math.sin((raw_angle - origin_angle)*Math.PI/180);
+
+			//console.log(parseInt(sin_value));
+			var threshold = 0.25;
+
+			if (sin_value > threshold)
+			{
+				console.log("right");
+				document.dispatchEvent( new KeyboardEvent("keydown", { keyCode: 39 }) );
+			}
+			else if (sin_value < -threshold)
+			{
+				console.log("left");
+				document.dispatchEvent( new KeyboardEvent("keydown", { keyCode: 37 }) );
+			}
+			else
+			{
+				document.dispatchEvent( new KeyboardEvent("keyup", { keyCode: 39 }) );
+				document.dispatchEvent( new KeyboardEvent("keyup", { keyCode: 37 }) );
+			}
+		}
+		
+		document.querySelector("#connectBtn").addEventListener("click", async () => {
+			start(thingy);
+		});
+		</script>
+			
+		<div id="donkeyJump">
+			<!-- 预备界面 -->
+			<div id="gameCover" class="block background">
+				<!-- 声音控制按钮 -->
+				<a href="javascript:void(0)" id="btnSound" class="icon">&nbsp;</a>
+				<!-- 开始 -->
+				<a href="javascript:void(0)" id="btnPlay" class="icon">&nbsp;</a>
+				<!-- 加载资源 -->
+				<span id="progressText"></span>
+			</div>
+			<!-- 游戏主体 -->
+			<div id="gameBody" class="block">
+				<div id="gameCanvas" class="block">
+					<!-- 天空背景层 -->
+					<canvas width="480" height="800" id="canvasSkyLayer"></canvas>
+					<!-- 远景山丘背景层 -->
+					<canvas width="480" height="800" id="canvasHillLayer"></canvas>
+					<!-- 近景山丘背景层 -->
+					<canvas width="480" height="800" id="canvasHillNearLayer"></canvas>
+					<!-- 房子背景层 -->
+					<canvas width="480" height="800" id="canvasFloorLayer"></canvas>
+					<!-- 白云精灵层 -->
+					<canvas width="480" height="800" id="canvasStairLayer"></canvas>
+					<!-- 驴子精灵层 -->
+					<canvas width="480" height="800" id="canvasDonkeyLayer"></canvas>
+					<!-- 效果精灵层 -->
+					<canvas width="480" height="800" id="canvasEffectLayer"></canvas>
+				</div>
+				<!-- 分数及暂停按钮 -->
+				<div id="numberAndPause" class="block">
+					<!-- 分数 -->
+					<div id="number" class="icon"></div>
+					<!-- 暂停 -->
+					<a href="javascript:void(0)" id="btnPause" class="icon">&nbsp;</a>
+				</div>
+				<!-- 预备 -->
+				<div id="beingReady" class="icon">
+					&nbsp;
+				</div>
+				<!-- 开始 -->
+				<div id="beingGo" class="icon">
+					&nbsp;
+				</div>
+				<!-- 暂停面板 -->
+				<div id="panelResume" class="icon">
+					<!-- 返回列表 -->
+					<a href="javascript:void(0)" id="btnResumeExit">&nbsp;</a>
+					<!-- 继续游戏 -->
+					<a href="javascript:void(0)" id="btnResume">&nbsp;</a>
+				</div>
+			</div>
+			<!-- 游戏结束 -->
+			<div id="gameOver" class="block background">
+				<!-- 名字 -->
+				<span id="name"></span>
+				<!-- 得分 -->
+				<span id="score"></span>
+				<!-- 准备 -->
+				<a href="javascript:void(0)" id="btnRetry" class="icon">&nbsp;</a>
+			</div>
+		</div>
+		<!-- engine -->
+		<script type="text/javascript" src="myEngine/core/my.js"></script>
+		<script type="text/javascript" src="myEngine/component/Component.js"></script>
+		<script type="text/javascript" src="myEngine/component/DisplayObject.js"></script>
+		<script type="text/javascript" src="myEngine/component/DisplayObjectContainer.js"></script>
+		<script type="text/javascript" src="myEngine/component/Bitmap.js"></script>
+		<script type="text/javascript" src="myEngine/component/Animation.js"></script>
+		<script type="text/javascript" src="myEngine/component/Sprite.js"></script>
+		<script type="text/javascript" src="myEngine/component/Viewport.js"></script>
+		<script type="text/javascript" src="myEngine/component/Layer.js"></script>
+		<script type="text/javascript" src="myEngine/component/Game.js"></script>
+		<script type="text/javascript" src="myEngine/event/KeyEvent.js"></script>
+		<script type="text/javascript" src="myEngine/utils/ImageManager.js"></script>
+		<script type="text/javascript" src="myEngine/utils/DOM.js"></script>
+		<script type="text/javascript" src="myEngine/utils/Math.js"></script>
+		<script type="text/javascript" src="myEngine/utils/buzz.js"></script>
+		<!-- donkey jump -->
+		<script type="text/javascript" src="js/resources/images.js"></script>
+		<script type="text/javascript" src="js/resources/audios.js"></script>
+		<script type="text/javascript" src="js/frames/prop.js"></script>
+		<script type="text/javascript" src="js/frames/stair.js"></script>
+		<script type="text/javascript" src="js/frames/donkey.js"></script>
+		<script type="text/javascript" src="js/frames/effect.js"></script>
+		<script type="text/javascript" src="js/classes/Prop.js"></script>
+		<script type="text/javascript" src="js/classes/Stair.js"></script>
+		<script type="text/javascript" src="js/classes/Cloud.js"></script>
+		<script type="text/javascript" src="js/classes/Donkey.js"></script>
+		<script type="text/javascript" src="js/classes/DonkeyJump.js"></script>
+		<script type="text/javascript" src="js/classes/UI.js"></script>
+		<script type="text/javascript" src="js/classes/Audio.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
 </html>
