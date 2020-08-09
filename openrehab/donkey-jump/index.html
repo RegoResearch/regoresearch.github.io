@@ -10,6 +10,8 @@
     <script type="module">
       import Thingy from "../index.js";
       const thingy = new Thingy({logEnabled: true});
+      var current_angle = 0;
+      var origin_angle = 0;
 
       async function start(device) {
         try {
@@ -38,7 +40,7 @@
         const btnData = data.detail.value;
         if (prev_btn == 0 && btnData == 1)
         {
-          //resetGame();
+          origin_angle = current_angle;
           console.log("reset game");
         }
       }
@@ -49,8 +51,9 @@
       var initGame = true;
       const myHeadingHandler = data => {
         const headingData = data.detail;
-        var angle = headingData.heading;
-        console.log(angle);
+        var angle = headingData.heading;        
+        console.log(origin_angle - angle);
+        current_angle = angle;
       }
       
       document.querySelector("#connectBtn").addEventListener("click", async () => {
