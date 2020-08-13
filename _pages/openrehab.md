@@ -24,6 +24,20 @@ REGO Tools는 세계적인 반도체 회사인 Nordic Semiconductor에서 제작
 
 -------------
 
+### 재활운동종류
+
+![image](https://user-images.githubusercontent.com/56623134/90157530-cd8d2b00-ddc8-11ea-8f44-5ee51ac77e7b.png)
+
+
+![image](https://user-images.githubusercontent.com/56623134/90157550-d120b200-ddc8-11ea-949f-72b10d44259f.png)
+
+
+![image](https://user-images.githubusercontent.com/56623134/90157562-d54ccf80-ddc8-11ea-9886-eda509c9b1bf.png)
+
+
+![image](https://user-images.githubusercontent.com/56623134/90157575-d8e05680-ddc8-11ea-9076-53363ed46cbc.png)
+
+
 ### 재활운동
 <br>
 
