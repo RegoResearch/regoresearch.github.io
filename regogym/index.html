@@ -1,0 +1,325 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <title>RegoGym</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+</head> 
+
+<body> 
+    <!--
+    <div id="chartContainer" style="height: 370px; width:100%;"></div>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    -->
+		<button id="myButton">Connect</button>
+
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search ... (e.g.,body, arm, leg, strength, ...)">
+    <ul id="myUL">
+      <li>
+        <div class="exercise"><img id="bicepcurl" src="./img/bicepcurl.gif" width=250 height=250><br>
+        Bicep Curl<br><br>
+        <div id="myTag">#arm</div>
+        <div id="myTag">#freeweight</div>
+        <div id="myTag">#strength</div>
+        </div>
+      </li>
+    </ul>
+    <script>
+    function myFunction() {
+      // Declare variables
+      var input, filter, ul, li, a, i, txtValue;
+      input = document.getElementById('myInput');
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("myUL");
+      li = ul.getElementsByTagName('li');
+
+      // Loop through all list items, and hide those who don't match the search query
+      for (i = 0; i < li.length; i++) {
+        div = li[i].getElementsByTagName("div")[0];
+        txtValue = div.textContent || div.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          li[i].style.display = "";
+        } else {
+          li[i].style.display = "none";
+        }
+      }
+    }
+    </script>
+
+		<script type="module">
+    /*
+    //Graph
+    var dpsX = [];
+    var dpsMax = [];
+    var dpsMin = [];
+    var chart = new CanvasJS.Chart("chartContainer", {
+      title : { text: "Sensor"},
+      data: [ {type: "line", showInLegend: true, dataPoints: dpsX},
+              {type: "line", showInLegend: true, dataPoints: dpsMax},
+              {type: "line", showInLegend: true, dataPoints: dpsMin}]
+    });
+
+    var axis = 0;
+    var dataLength = 30; // number of dataPoints visible at any point
+
+    function UpdateChart(value, max, min)
+    {
+        dpsX.push({x: axis, y: value});
+        dpsMax.push({x: axis, y: min});
+        dpsMin.push({x: axis, y: max});
+        axis++;
+
+        if (dpsX.length > dataLength)
+        {
+            dpsX.shift();
+            dpsMax.shift();
+            dpsMin.shift();
+        }
+
+      chart.render();
+    }
+    */
+
+    //postmessage
+    var gGameWindow;
+    const gGameWindowName = "rego-game";
+
+    //exericses
+    var gTarget = "bodyswing";
+    function openWindow(id)
+    {
+      gTarget = id;
+      gGameWindow = window.open('./three.js/index.html?model=' + gTarget, gGameWindowName, 'height=' + screen.height*0.87 + ',width=' + screen.width*0.99 + 'fullscreen=yes');
+    }
+
+    var bicepcurl = document.getElementById( 'bicepcurl' );
+    bicepcurl.addEventListener( 'click', function( e ) { openWindow (e.path[0].id); });
+
+    var armraise = document.getElementById( 'armraise' );
+    armraise.addEventListener( 'click', function( e ) { openWindow (e.path[0].id); });
+
+    var bodyswing = document.getElementById( 'bodyswing' );
+    bodyswing.addEventListener( 'click', function( e ) { openWindow (e.path[0].id); });
+
+    var bodybend = document.getElementById( 'bodybend' );
+    bodybend.addEventListener( 'click', function( e ) { openWindow (e.path[0].id); });
+
+    var tiptoe = document.getElementById( 'tiptoe' );
+    tiptoe.addEventListener( 'click', function( e ) { openWindow (e.path[0].id); });
+
+    var legraise = document.getElementById( 'legraise' );
+    legraise.addEventListener( 'click', function( e ) { openWindow (e.path[0].id); });
+
+    //Thingy
+		import Thingy from "../index.js";
+		const thingy = new Thingy({logEnabled: true});
+    var gDevice;
+
+    //choose action
+    /**************************************************/
+    
+    /**************************************************/
+
+		async function start(device)
+    {
+			try
+      {
+        gDevice = device;
+        await device.connect();
+
+        device.addEventListener("gravityvector", myGravityHandler);
+        await device.gravityvector.start();
+
+        device.addEventListener("button", myButtonHandler);
+        await device.button.start();
+
+        await thingy.soundconfiguration.write({speakerMode: 3});
+        await thingy.speakerdata.write({"mode":3,"sample":5});
+
+        //if connected, it turns to green color
+        document.querySelector("#myButton").style.background = "red";
+			}
+      catch (error)
+      {
+			  console.error(error);
+			}
+		}
+
+    //sensor: gravity
+    var reverse = true;
+		const myGravityHandler = data => {
+			const gravity = data.detail.value;
+
+      switch(gTarget)
+      {
+        case "armraise":  //pass
+          var value = gravity.z;
+          var max = 8;
+          var min = 1;
+          var model_max = 1.0;
+          postValue(max, min, model_max, value);
+          //UpdateChart(max, value, min);
+        break;
+        case "bodybend": //pass
+          var value = -gravity.z;
+          var max = 5;
+          var min = 0;
+          var model_max = 1.0
+          postValue(max, min, model_max, value);
+          //UpdateChart(max, value, min);
+        break;
+        case "bicepcurl": //pass
+          var value = -gravity.x;
+          var max = 7;
+          var min = -7;
+          var model_max = 1.0
+          postValue(max, min, model_max, value);
+          //UpdateChart(max, value, min);
+        break;
+        case "tiptoe":
+          var value = gravity.x;
+          var max = 7;
+          var min = 5;
+          var model_max = 1.0;
+          postValue(max, min, model_max, value);
+          //UpdateChart(max, value, min);
+        break;
+        case "legraise":
+          var value = gravity.z;
+          var max = 7;
+          var min = 0;
+          var model_max = 0.4;
+          postValue(max, min, model_max, value);
+          //UpdateChart(max, value, min);
+        break;
+        case "bodyswing":
+          var value = -gravity.y;
+          var max = 2;
+          var min = 0;
+          var model_max = 1.0;
+          postValue(max, min, model_max, value);
+          //UpdateChart(max, value, min);
+        break;
+      }
+		}
+
+		//process button event
+		var prev_btn = 0;
+		const myButtonHandler = data => {
+			const btnData = data.detail.value;
+			if (prev_btn == 0 && btnData == 1)
+			{
+        switch(gTarget)
+        {
+          case "bodyswing":
+            gHeadingAngleOffset = gHeadingAngleNow;
+            thingy.speakerdata.write({"mode":3,"sample":4});
+            console.log("set angle offset");
+          break;
+          case "PELVIC_TILT":
+            gGravityZOffset = gGravityZNow;
+            thingy.speakerdata.write({"mode":3,"sample":4});
+            ChangeColor();
+            console.log("set gravity-z offset");
+          break;
+          case "ANKLE_DORSIFLEXSION":
+            gGravityXOffset = gGravityXNow;
+            thingy.speakerdata.write({"mode":3,"sample":4});
+            ChangeColor();
+            console.log("set gravity-x offset");
+          break;
+          case "HAND_TAP":
+          case "FOOT_TAP":
+            thingy.speakerdata.write({"mode":3,"sample":4});
+            ChangeColor();
+            postKeyEvent("keydown","space");
+            console.log("tap");
+          break;
+        }
+			}
+      prev_btn = btnData;
+		}
+
+    //process color
+    var gColorIndex = 0;
+    var gColorGroup = ["blue", "red", "yellow", "green", "white"];
+    function ChangeColor()
+    {
+        gDevice.led.write({
+          mode: "breathe",
+          color: gColorGroup[gColorIndex],
+          intensity: 50,
+          delay: 1000,
+        });
+
+        gColorIndex = gColorIndex++ >= gColorGroup.length-1 ? 0 : gColorIndex;
+    }
+
+    function postValue(max, min, model_max, value)
+    {
+      var normal = 0;
+
+      if (value>max)
+        normal = 0.95;
+      else if (value<min)
+        normal = 0.05;
+      else
+        normal = (value-min)/(max-min);  
+
+      normal = normal * model_max;
+
+      let msg={pType:"raw", pValue:normal, pMax:model_max};
+      if (gGameWindow != null)
+        gGameWindow.postMessage(msg,'*');
+    }
+
+    //process KeyboardEvent
+    function postKeyEvent(status, key)
+    {
+      switch(key)
+      {
+        case "up":
+        {
+          let msg={pType:"key", pStatus:status, pKey:38};
+          gGameWindow.postMessage(msg,'*');
+          //console.log("up");
+          break;
+        }
+        case "down":
+        {
+          let msg={pType:"key", pStatus:status, pKey:40};
+          gGameWindow.postMessage(msg,'*');
+          //console.log("down");
+          break;
+        }
+        case "left":
+        {
+          let msg={pType:"key", pStatus:status, pKey:37};
+          gGameWindow.postMessage(msg,'*');
+          //console.log("left");
+          break;
+        }
+        case "right":
+        {
+          let msg={pType:"key", pStatus:status, pKey:39};
+          gGameWindow.postMessage(msg,'*');
+          //console.log("right");
+          break;
+        }
+        case "space":
+        {
+          let msg={pType:"key", pStatus:status, pKey:32};
+          gGameWindow.postMessage(msg,'*');
+          //console.log("right");
+          break;
+        }
+      }
+    }
+
+		document.querySelector("#myButton").addEventListener("click", async () => {
+			start(thingy);
+		});
+		</script>
+</body> 
+</html>
