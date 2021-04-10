@@ -34,13 +34,6 @@
 
 <body class="{% if page.url == "/" %} homefirstpage {% endif %}">
 
-    <!-- Kakao Adfit --!>
-    <ins class="kakao_ad_area" style="display:none;" 
-     data-ad-unit    = "DAN-AjQTPvT4LGgTC8oK" 
-     data-ad-width   = "728" 
-     data-ad-height  = "90"></ins> 
-    <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
-    
     <!-- Navbar -->
     <nav id="MagicMenu" class="topnav navbar navbar-expand-lg navbar-light bg-white fixed-top">
     <div class="container">
@@ -69,6 +62,12 @@
         {{ content }}
     </main>
 
+    <!-- Kakao Adfit -->
+    <ins class="kakao_ad_area" style="display:none;" 
+     data-ad-unit    = "DAN-AjQTPvT4LGgTC8oK" 
+     data-ad-width   = "728" 
+     data-ad-height  = "90"></ins> 
+    <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
 
     <!-- Scripts: popper, bootstrap, theme, lunr -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
