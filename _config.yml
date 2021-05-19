@@ -1,6 +1,6 @@
 # Site
-name: 'Rego'
-description: 'Rego는 신경마비환자들에게 재활상식, 재활병원, 재활운동 등의 다양한 정보를 제공합니다.'
+name: 'Rego 재활연구소'
+description: 'Rego 재활연구소는 신경마비환자들에게 재활상식, 재활병원, 재활운동 등의 다양한 정보를 제공합니다.'
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
 baseurl: ''
@@ -22,7 +22,7 @@ authors:
       name:           sky
       site:           https://regoresearch.github.io
       avatar:         assets/images/sky.PNG
-      bio:            "안녕하세요, Rego를 방문해주셔서 감사합니다!"
+      bio:            "안녕하세요, Rego 재활연구소를 방문해주셔서 감사합니다!"
       email:          rego.research@gmail.com
       twitter:        #
  
