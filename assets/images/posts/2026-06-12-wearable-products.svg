@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" font-family="'Apple SD Gothic Neo','Malgun Gothic',sans-serif">
+  <rect width="800" height="400" fill="#f5f7fa"/>
+  <text x="400" y="42" text-anchor="middle" font-size="22" font-weight="bold" fill="#2c3e50">주목할 웨어러블 재활로봇 3가지</text>
+
+  <!-- Card 1 -->
+  <rect x="40" y="70" width="225" height="290" rx="14" fill="#ffffff" stroke="#d6dde6"/>
+  <rect x="40" y="70" width="225" height="52" rx="14" fill="#3b82c4"/>
+  <rect x="40" y="108" width="225" height="14" fill="#3b82c4"/>
+  <text x="152" y="103" text-anchor="middle" font-size="16" font-weight="bold" fill="#ffffff">엔젤렉스 M20</text>
+  <text x="152" y="148" text-anchor="middle" font-size="13" font-weight="bold" fill="#3b82c4">병원 재활치료용 (한국)</text>
+  <text x="58" y="182" font-size="13" fill="#44525f">· 뇌졸중·척수손상 보행재활</text>
+  <text x="58" y="208" font-size="13" fill="#44525f">· 평지·계단 실전 훈련</text>
+  <text x="58" y="234" font-size="13" fill="#44525f">· 보행의도 인식, 힘 제어</text>
+  <text x="58" y="260" font-size="13" fill="#44525f">· 3등급 의료기기 인증</text>
+  <text x="58" y="286" font-size="13" fill="#44525f">· 재활의료기관 30여 곳 사용</text>
+
+  <!-- Card 2 -->
+  <rect x="288" y="70" width="225" height="290" rx="14" fill="#ffffff" stroke="#d6dde6"/>
+  <rect x="288" y="70" width="225" height="52" rx="14" fill="#e8833a"/>
+  <rect x="288" y="108" width="225" height="14" fill="#e8833a"/>
+  <text x="400" y="103" text-anchor="middle" font-size="16" font-weight="bold" fill="#ffffff">윔 S (WIM S)</text>
+  <text x="400" y="148" text-anchor="middle" font-size="13" font-weight="bold" fill="#e8833a">개인 구매용 (한국)</text>
+  <text x="306" y="182" font-size="13" fill="#44525f">· 일상 보행 보조·운동</text>
+  <text x="306" y="208" font-size="13" fill="#44525f">· 본체 무게 단 1.6kg</text>
+  <text x="306" y="234" font-size="13" fill="#44525f">· 300만 원대 가격</text>
+  <text x="306" y="260" font-size="13" fill="#44525f">· 앱으로 보행 데이터 분석</text>
+  <text x="306" y="286" font-size="13" fill="#44525f">· 경증 보행 약화에 적합</text>
+
+  <!-- Card 3 -->
+  <rect x="536" y="70" width="225" height="290" rx="14" fill="#ffffff" stroke="#d6dde6"/>
+  <rect x="536" y="70" width="225" height="52" rx="14" fill="#5a9e6f"/>
+  <rect x="536" y="108" width="225" height="14" fill="#5a9e6f"/>
+  <text x="648" y="103" text-anchor="middle" font-size="16" font-weight="bold" fill="#ffffff">Eve (Wandercraft)</text>
+  <text x="648" y="148" text-anchor="middle" font-size="13" font-weight="bold" fill="#5a9e6f">개인용 외골격 (프랑스)</text>
+  <text x="554" y="182" font-size="13" fill="#44525f">· 척수손상 환자 대상</text>
+  <text x="554" y="208" font-size="13" fill="#44525f">· 스스로 균형 잡는 방식</text>
+  <text x="554" y="234" font-size="13" fill="#44525f">· 목발 없이 두 손 자유</text>
+  <text x="554" y="260" font-size="13" fill="#44525f">· NVIDIA와 AI 제어 협력</text>
+  <text x="554" y="286" font-size="13" fill="#44525f">· 임상시험 진행 중</text>
+
+  <text x="400" y="384" text-anchor="middle" font-size="12" fill="#8a99a8">※ 각 제품의 적응증과 사용 조건은 의료진과 상담 후 확인하세요</text>
+</svg>
