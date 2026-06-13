@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" font-family="'Apple SD Gothic Neo','Malgun Gothic',sans-serif">
+  <rect width="800" height="440" fill="#f4f7fa"/>
+  <text x="400" y="44" text-anchor="middle" font-size="23" font-weight="bold" fill="#22364a">제3기 재활의료기관 지역별 분포</text>
+  <text x="400" y="70" text-anchor="middle" font-size="14" fill="#5a6c7d">전국 71개소 · 2026.3 ~ 2029.2</text>
+
+  <!-- bars: value -> width scale (16 -> 360px) -->
+  <!-- row template: label x=60, bar starts x=150 -->
+  <g font-size="14" fill="#33485c">
+    <!-- 경기 16 -->
+    <text x="120" y="108" text-anchor="end">경기</text>
+    <rect x="135" y="96" width="360" height="18" rx="4" fill="#2c7fb8"/>
+    <text x="505" y="111" font-size="13" font-weight="bold" fill="#1f5e96">16</text>
+    <!-- 서울 11 -->
+    <text x="120" y="138" text-anchor="end">서울</text>
+    <rect x="135" y="126" width="248" height="18" rx="4" fill="#3a8fc4"/>
+    <text x="393" y="141" font-size="13" font-weight="bold" fill="#1f5e96">11</text>
+    <!-- 부산 7 -->
+    <text x="120" y="168" text-anchor="end">부산</text>
+    <rect x="135" y="156" width="158" height="18" rx="4" fill="#4c9ed0"/>
+    <text x="303" y="171" font-size="13" font-weight="bold" fill="#1f5e96">7</text>
+    <!-- 대구 6 -->
+    <text x="120" y="198" text-anchor="end">대구</text>
+    <rect x="135" y="186" width="135" height="18" rx="4" fill="#4c9ed0"/>
+    <text x="280" y="201" font-size="13" font-weight="bold" fill="#1f5e96">6</text>
+    <!-- 대전 5 -->
+    <text x="120" y="228" text-anchor="end">대전</text>
+    <rect x="135" y="216" width="113" height="18" rx="4" fill="#5fad da"/>
+    <rect x="135" y="216" width="113" height="18" rx="4" fill="#5faddb"/>
+    <text x="258" y="231" font-size="13" font-weight="bold" fill="#1f5e96">5</text>
+    <!-- 경북 5 -->
+    <text x="120" y="258" text-anchor="end">경북</text>
+    <rect x="135" y="246" width="113" height="18" rx="4" fill="#5faddb"/>
+    <text x="258" y="261" font-size="13" font-weight="bold" fill="#1f5e96">5</text>
+    <!-- 충북 4 -->
+    <text x="120" y="288" text-anchor="end">충북</text>
+    <rect x="135" y="276" width="90" height="18" rx="4" fill="#72bce1"/>
+    <text x="235" y="291" font-size="13" font-weight="bold" fill="#1f5e96">4</text>
+    <!-- 경남 4 -->
+    <text x="120" y="318" text-anchor="end">경남</text>
+    <rect x="135" y="306" width="90" height="18" rx="4" fill="#72bce1"/>
+    <text x="235" y="321" font-size="13" font-weight="bold" fill="#1f5e96">4</text>
+    <!-- 인천·광주 3 -->
+    <text x="120" y="348" text-anchor="end">인천·광주</text>
+    <rect x="135" y="336" width="68" height="18" rx="4" fill="#86cae6"/>
+    <text x="213" y="351" font-size="13" font-weight="bold" fill="#1f5e96">각 3</text>
+    <!-- 강원·충남 2 -->
+    <text x="120" y="378" text-anchor="end">강원·충남</text>
+    <rect x="135" y="366" width="45" height="18" rx="4" fill="#9ad6ec"/>
+    <text x="190" y="381" font-size="13" font-weight="bold" fill="#1f5e96">각 2</text>
+    <!-- 울산·전북·제주 1 -->
+    <text x="120" y="408" text-anchor="end">울산·전북·제주</text>
+    <rect x="135" y="396" width="23" height="18" rx="4" fill="#b5e2f2"/>
+    <text x="168" y="411" font-size="13" font-weight="bold" fill="#1f5e96">각 1</text>
+  </g>
+
+  <text x="560" y="402" font-size="12" fill="#8a99a8">제2기 53곳 → 제3기 71곳 (+18)</text>
+</svg>
