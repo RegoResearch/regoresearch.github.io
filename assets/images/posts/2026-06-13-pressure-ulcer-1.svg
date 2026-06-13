@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" font-family="'Apple SD Gothic Neo','Malgun Gothic',sans-serif">
+  <rect width="800" height="400" fill="#f4f7fa"/>
+  <text x="400" y="44" text-anchor="middle" font-size="22" font-weight="bold" fill="#22364a">욕창의 단계 (깊이에 따른 분류)</text>
+  <text x="400" y="70" text-anchor="middle" font-size="13" fill="#5a6c7d">단계가 올라갈수록 조직 손상이 깊어집니다</text>
+
+  <!-- skin layers reference baseline -->
+  <!-- 4 columns -->
+  <g>
+    <!-- Stage 1 -->
+    <text x="150" y="108" text-anchor="middle" font-size="15" font-weight="bold" fill="#e0a528">1단계</text>
+    <rect x="70" y="120" width="160" height="22" fill="#f6d9a0"/>
+    <rect x="70" y="142" width="160" height="20" fill="#f3c98a"/>
+    <rect x="70" y="162" width="160" height="40" fill="#e9b97a"/>
+    <ellipse cx="150" cy="131" rx="34" ry="8" fill="#e8736a" opacity="0.75"/>
+    <text x="150" y="222" text-anchor="middle" font-size="11.5" fill="#5a6c7d">표피 정상,</text>
+    <text x="150" y="238" text-anchor="middle" font-size="11.5" fill="#5a6c7d">사라지지 않는 홍반</text>
+
+    <!-- Stage 2 -->
+    <text x="340" y="108" text-anchor="middle" font-size="15" font-weight="bold" fill="#dd8c3a">2단계</text>
+    <rect x="260" y="120" width="160" height="22" fill="#f6d9a0"/>
+    <rect x="260" y="142" width="160" height="20" fill="#f3c98a"/>
+    <rect x="260" y="162" width="160" height="40" fill="#e9b97a"/>
+    <path d="M325 120 q15 22 30 0 z" fill="#c0504a"/>
+    <text x="340" y="222" text-anchor="middle" font-size="11.5" fill="#5a6c7d">표피·진피 부분 손상</text>
+    <text x="340" y="238" text-anchor="middle" font-size="11.5" fill="#5a6c7d">(물집·얕은 상처)</text>
+
+    <!-- Stage 3 -->
+    <text x="530" y="108" text-anchor="middle" font-size="15" font-weight="bold" fill="#cf6b3a">3단계</text>
+    <rect x="450" y="120" width="160" height="22" fill="#f6d9a0"/>
+    <rect x="450" y="142" width="160" height="20" fill="#f3c98a"/>
+    <rect x="450" y="162" width="160" height="40" fill="#e9b97a"/>
+    <path d="M505 120 q25 60 50 0 z" fill="#a83f39"/>
+    <text x="530" y="222" text-anchor="middle" font-size="11.5" fill="#5a6c7d">피하지방까지</text>
+    <text x="530" y="238" text-anchor="middle" font-size="11.5" fill="#5a6c7d">깊게 손상</text>
+
+    <!-- Stage 4 -->
+    <text x="710" y="108" text-anchor="middle" font-size="15" font-weight="bold" fill="#b0392f">4단계</text>
+    <rect x="630" y="120" width="130" height="22" fill="#f6d9a0"/>
+    <rect x="630" y="142" width="130" height="20" fill="#f3c98a"/>
+    <rect x="630" y="162" width="130" height="40" fill="#e9b97a"/>
+    <rect x="675" y="196" width="40" height="12" rx="3" fill="#e8e3d4"/>
+    <path d="M680 120 q15 70 35 78 q15 -8 0 -78 z" fill="#8f2f27"/>
+    <text x="695" y="222" text-anchor="middle" font-size="11.5" fill="#5a6c7d">뼈·근육·힘줄</text>
+    <text x="695" y="238" text-anchor="middle" font-size="11.5" fill="#5a6c7d">노출</text>
+  </g>
+
+  <!-- two special classifications -->
+  <rect x="70" y="270" width="330" height="92" rx="12" fill="#ffffff" stroke="#cdd9e3"/>
+  <text x="90" y="298" font-size="14" font-weight="bold" fill="#5a3a8a">단계측정불가</text>
+  <text x="90" y="322" font-size="12" fill="#5a6c7d">딱지(가피)에 덮여</text>
+  <text x="90" y="340" font-size="12" fill="#5a6c7d">깊이 판단이 어려운 경우</text>
+
+  <rect x="420" y="270" width="330" height="92" rx="12" fill="#fff" stroke="#cdd9e3"/>
+  <text x="440" y="298" font-size="14" font-weight="bold" fill="#8a3a6a">심부조직손상 의심</text>
+  <text x="440" y="322" font-size="12" fill="#5a6c7d">겉은 멀쩡해도 보라/갈색 변색,</text>
+  <text x="440" y="340" font-size="12" fill="#5a6c7d">혈액성 물집 — 급속 악화 주의</text>
+
+  <text x="400" y="386" text-anchor="middle" font-size="12" fill="#8a99a8">위층부터 표피 · 진피 · 피하지방 · (뼈/근육)</text>
+</svg>
