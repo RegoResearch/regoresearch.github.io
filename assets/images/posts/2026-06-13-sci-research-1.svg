@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" font-family="'Apple SD Gothic Neo','Malgun Gothic',sans-serif">
+  <rect width="800" height="440" fill="#f4f7fa"/>
+  <text x="400" y="44" text-anchor="middle" font-size="22" font-weight="bold" fill="#22364a">척수손상 회복 연구의 네 갈래 (2026)</text>
+  <text x="400" y="70" text-anchor="middle" font-size="13" fill="#5a6c7d">완치는 아직 — 그러나 각자의 속도로 전진 중</text>
+
+  <!-- 4 cards -->
+  <!-- card 1 줄기세포 -->
+  <rect x="40" y="92" width="350" height="150" rx="14" fill="#ffffff" stroke="#cdd9e3"/>
+  <circle cx="78" cy="128" r="18" fill="#7e57c2"/>
+  <text x="78" y="134" text-anchor="middle" font-size="16" fill="#fff">1</text>
+  <text x="108" y="124" font-size="16" font-weight="bold" fill="#5e35a8">줄기세포</text>
+  <text x="108" y="146" font-size="12.5" fill="#5a6c7d">사라진 신경·지지세포를 보충</text>
+  <text x="60" y="178" font-size="12.5" fill="#44525f">· Lineage OPC1 (미국, 임상 진행)</text>
+  <text x="60" y="200" font-size="12.5" fill="#44525f">· 국내 iNSC, 일본 iPSC, 중국 등</text>
+  <text x="60" y="226" font-size="12" font-weight="bold" fill="#9a7124">단계: 초기 임상(안전성 확인)</text>
+
+  <!-- card 2 약물 -->
+  <rect x="410" y="92" width="350" height="150" rx="14" fill="#ffffff" stroke="#cdd9e3"/>
+  <circle cx="448" cy="128" r="18" fill="#2c7fb8"/>
+  <text x="448" y="134" text-anchor="middle" font-size="16" fill="#fff">2</text>
+  <text x="478" y="124" font-size="16" font-weight="bold" fill="#1f5e96">신경재생 약물</text>
+  <text x="478" y="146" font-size="12.5" fill="#5a6c7d">신경이 다시 자라도록 장벽 제거</text>
+  <text x="430" y="178" font-size="12.5" fill="#44525f">· NervGen NVG-291 (펩타이드 주사)</text>
+  <text x="430" y="200" font-size="12.5" fill="#44525f">· FDA 신속심사 · 1b/2a상 통과</text>
+  <text x="430" y="226" font-size="12" font-weight="bold" fill="#9a7124">단계: 2상 → 승인 향해 진행</text>
+
+  <!-- card 3 전기자극 -->
+  <rect x="40" y="256" width="350" height="150" rx="14" fill="#eafaf0" stroke="#9cd9b4"/>
+  <circle cx="78" cy="292" r="18" fill="#1f8a4c"/>
+  <text x="78" y="298" text-anchor="middle" font-size="16" fill="#fff">3</text>
+  <text x="108" y="288" font-size="16" font-weight="bold" fill="#157a40">전기자극</text>
+  <text x="108" y="310" font-size="12.5" fill="#4a6678">잠든 신경 회로를 깨움</text>
+  <text x="60" y="342" font-size="12.5" fill="#3f6b51">· ONWARD ARC-EX (비침습)</text>
+  <text x="60" y="364" font-size="12.5" fill="#3f6b51">· FDA 허가 · 가정 사용 가능</text>
+  <text x="60" y="390" font-size="12" font-weight="bold" fill="#157a40">단계: 가장 임상에 근접 ★</text>
+
+  <!-- card 4 뇌-척수 인터페이스 -->
+  <rect x="410" y="256" width="350" height="150" rx="14" fill="#ffffff" stroke="#cdd9e3"/>
+  <circle cx="448" cy="292" r="18" fill="#e8833a"/>
+  <text x="448" y="298" text-anchor="middle" font-size="16" fill="#fff">4</text>
+  <text x="478" y="288" font-size="16" font-weight="bold" fill="#c4661f">뇌-척수 인터페이스</text>
+  <text x="478" y="310" font-size="12.5" fill="#5a6c7d">끊긴 신호를 기계로 우회 연결</text>
+  <text x="430" y="342" font-size="12.5" fill="#44525f">· NeuroRestore '디지털 브리지'</text>
+  <text x="430" y="364" font-size="12.5" fill="#44525f">· 생각으로 보행 성공 사례</text>
+  <text x="430" y="390" font-size="12" font-weight="bold" fill="#9a7124">단계: 연구(수술·장비 필요)</text>
+</svg>
