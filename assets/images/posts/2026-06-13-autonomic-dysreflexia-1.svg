@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" font-family="'Apple SD Gothic Neo','Malgun Gothic',sans-serif">
+  <rect width="800" height="440" fill="#fdf6f4"/>
+  <text x="400" y="42" text-anchor="middle" font-size="22" font-weight="bold" fill="#9a2d22">자율신경 반사부전 응급 대처 순서</text>
+  <text x="400" y="68" text-anchor="middle" font-size="13" fill="#7a5a54">갑작스러운 심한 두통 · 땀 · 홍조 → 의심하고 즉시 행동</text>
+
+  <!-- step 1 -->
+  <rect x="60" y="90" width="680" height="56" rx="12" fill="#fff" stroke="#e6b9b0"/>
+  <circle cx="96" cy="118" r="18" fill="#c0392b"/>
+  <text x="96" y="124" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">1</text>
+  <text x="128" y="114" font-size="15" font-weight="bold" fill="#9a2d22">즉시 똑바로 앉힌다 (다리는 아래로)</text>
+  <text x="128" y="135" font-size="12.5" fill="#6a544f">눕히지 말 것 — 혈액을 하체로 보내 혈압을 낮춤</text>
+
+  <!-- step 2 -->
+  <rect x="60" y="154" width="680" height="56" rx="12" fill="#fff" stroke="#e6b9b0"/>
+  <circle cx="96" cy="182" r="18" fill="#cf5a2b"/>
+  <text x="96" y="188" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">2</text>
+  <text x="128" y="178" font-size="15" font-weight="bold" fill="#9a3d22">조이는 것을 모두 푼다</text>
+  <text x="128" y="199" font-size="12.5" fill="#6a544f">옷 · 벨트 · 복대 · 신발 · 압박스타킹 · 보조기</text>
+
+  <!-- step 3 -->
+  <rect x="60" y="218" width="680" height="56" rx="12" fill="#fff" stroke="#e6b9b0"/>
+  <circle cx="96" cy="246" r="18" fill="#d99227"/>
+  <text x="96" y="252" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">3</text>
+  <text x="128" y="242" font-size="15" font-weight="bold" fill="#8a6618">혈압을 측정한다 (2~5분마다 반복)</text>
+  <text x="128" y="263" font-size="12.5" fill="#6a544f">평소 혈압을 알아두면 판단에 큰 도움</text>
+
+  <!-- step 4 -->
+  <rect x="60" y="282" width="680" height="56" rx="12" fill="#fff" stroke="#e6b9b0"/>
+  <circle cx="96" cy="310" r="18" fill="#3f9a52"/>
+  <text x="96" y="316" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">4</text>
+  <text x="128" y="306" font-size="15" font-weight="bold" fill="#1f7a3c">원인을 찾아 제거 — 방광 먼저, 다음 장</text>
+  <text x="128" y="327" font-size="12.5" fill="#6a544f">소변줄 꼬임·막힘 확인 후 천천히 배뇨 → 막힌 변 확인 (약 80%가 방광·장)</text>
+
+  <!-- step 5 -->
+  <rect x="60" y="346" width="680" height="58" rx="12" fill="#fbe9e6" stroke="#c0392b"/>
+  <circle cx="96" cy="375" r="18" fill="#9a2d22"/>
+  <text x="96" y="381" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">5</text>
+  <text x="128" y="370" font-size="15" font-weight="bold" fill="#9a2d22">안 잡히면 즉시 119 · 응급실</text>
+  <text x="128" y="391" font-size="12.5" fill="#7a3d35">혈압이 안 떨어지거나 수축기 150mmHg 이상 지속 → 고혈압 응급, 뇌졸중 위험</text>
+
+  <text x="400" y="428" text-anchor="middle" font-size="11.5" fill="#9a8a86">※ 약물(니페디핀·니트로글리세린 등)은 의료진의 영역입니다 · 정보 제공용</text>
+</svg>
