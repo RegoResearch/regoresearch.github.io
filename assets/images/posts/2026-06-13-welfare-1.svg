@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" font-family="'Apple SD Gothic Neo','Malgun Gothic',sans-serif">
+  <rect width="800" height="400" fill="#f4f7fa"/>
+  <text x="400" y="42" text-anchor="middle" font-size="22" font-weight="bold" fill="#22364a">장애인 보조기기·복지 지원, 네 가지 갈래</text>
+  <text x="400" y="68" text-anchor="middle" font-size="13" fill="#5a6c7d">2026 기준 · 신청해야 받을 수 있습니다</text>
+
+  <!-- 1 -->
+  <rect x="40" y="92" width="350" height="130" rx="14" fill="#fff" stroke="#9cc3df"/>
+  <text x="64" y="124" font-size="16" font-weight="bold" fill="#1f5e96">① 건강보험 보조기기 급여</text>
+  <text x="64" y="152" font-size="12.5" fill="#44525f">등록 장애인 대상 · 구입비 지원</text>
+  <text x="64" y="176" font-size="13" fill="#33485c" font-weight="bold">기준액의 90% 지원</text>
+  <text x="64" y="198" font-size="12" fill="#7a8a99">예: 전동휠체어 209만원·내구연한 6년</text>
+
+  <!-- 2 -->
+  <rect x="410" y="92" width="350" height="130" rx="14" fill="#fff" stroke="#86c79e"/>
+  <text x="434" y="124" font-size="16" font-weight="bold" fill="#157a40">② 저소득층 무료 교부사업</text>
+  <text x="434" y="152" font-size="12.5" fill="#44525f">수급자·차상위 대상</text>
+  <text x="434" y="176" font-size="13" fill="#33485c" font-weight="bold">연 200만원 한도·최대 3품목</text>
+  <text x="434" y="198" font-size="12" fill="#7a8a99">2026년 총 46개 품목 지원</text>
+
+  <!-- 3 -->
+  <rect x="40" y="234" width="350" height="130" rx="14" fill="#fff" stroke="#d9bd86"/>
+  <text x="64" y="266" font-size="16" font-weight="bold" fill="#9a7124">③ 활동지원 서비스</text>
+  <text x="64" y="294" font-size="12.5" fill="#44525f">'사람의 도움'을 지원</text>
+  <text x="64" y="318" font-size="13" fill="#33485c" font-weight="bold">활동지원사 방문 (바우처)</text>
+  <text x="64" y="340" font-size="12" fill="#7a8a99">신체활동·가사·이동 지원</text>
+
+  <!-- 4 -->
+  <rect x="410" y="234" width="350" height="130" rx="14" fill="#fff" stroke="#c8a0bd"/>
+  <text x="434" y="266" font-size="16" font-weight="bold" fill="#9a3d68">④ 장애인연금 (현금)</text>
+  <text x="434" y="294" font-size="12.5" fill="#44525f">만18세 이상 중증 · 소득기준 충족</text>
+  <text x="434" y="318" font-size="13" fill="#33485c" font-weight="bold">2026년 최대 월 439,700원</text>
+  <text x="434" y="340" font-size="12" fill="#7a8a99">기초 349,700 + 부가 90,000</text>
+
+  <text x="400" y="388" text-anchor="middle" font-size="11.5" fill="#9a8a86">※ 금액·자격은 매년 변동 · 읍면동/복지로/건보공단/중앙보조기기센터(1670-5529)에서 확인</text>
+</svg>

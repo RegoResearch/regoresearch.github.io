@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" font-family="'Apple SD Gothic Neo','Malgun Gothic',sans-serif">
+  <rect width="800" height="400" fill="#f4f7fa"/>
+  <text x="400" y="42" text-anchor="middle" font-size="22" font-weight="bold" fill="#22364a">기립성 저혈압, 약 없이 관리하는 법</text>
+  <text x="400" y="68" text-anchor="middle" font-size="13" fill="#5a6c7d">일어설 때 혈압이 떨어져 어지러운 문제 — 생활 습관이 1차</text>
+
+  <!-- 6 tip cards -->
+  <g>
+    <rect x="40" y="92" width="232" height="132" rx="12" fill="#fff" stroke="#cdd9e3"/>
+    <circle cx="76" cy="128" r="17" fill="#2c7fb8"/><text x="76" y="134" text-anchor="middle" font-size="15" font-weight="bold" fill="#fff">1</text>
+    <text x="102" y="124" font-size="14" font-weight="bold" fill="#1f5e96">천천히 일어나기</text>
+    <text x="60" y="160" font-size="12.5" fill="#44525f">침대 가장자리에 걸터앉아</text>
+    <text x="60" y="180" font-size="12.5" fill="#44525f">30초 이상 머문 뒤 기립</text>
+    <text x="60" y="204" font-size="12" fill="#8a99a8">아침에 특히 조심</text>
+
+    <rect x="284" y="92" width="232" height="132" rx="12" fill="#fff" stroke="#cdd9e3"/>
+    <circle cx="320" cy="128" r="17" fill="#2c7fb8"/><text x="320" y="134" text-anchor="middle" font-size="15" font-weight="bold" fill="#fff">2</text>
+    <text x="346" y="124" font-size="14" font-weight="bold" fill="#1f5e96">압박스타킹·복대</text>
+    <text x="304" y="160" font-size="12.5" fill="#44525f">다리·배에 피가 고이는</text>
+    <text x="304" y="180" font-size="12.5" fill="#44525f">것을 줄여 혈압 유지</text>
+
+    <rect x="528" y="92" width="232" height="132" rx="12" fill="#fff" stroke="#cdd9e3"/>
+    <circle cx="564" cy="128" r="17" fill="#2c7fb8"/><text x="564" y="134" text-anchor="middle" font-size="15" font-weight="bold" fill="#fff">3</text>
+    <text x="590" y="124" font-size="14" font-weight="bold" fill="#1f5e96">충분한 수분</text>
+    <text x="548" y="160" font-size="12.5" fill="#44525f">물을 자주 충분히</text>
+    <text x="548" y="180" font-size="12.5" fill="#44525f">염분 조절은 의료진과</text>
+    <text x="548" y="204" font-size="12" fill="#8a99a8">방광 관리와 함께 고려</text>
+
+    <rect x="40" y="236" width="232" height="132" rx="12" fill="#fff" stroke="#cdd9e3"/>
+    <circle cx="76" cy="272" r="17" fill="#1f8a4c"/><text x="76" y="278" text-anchor="middle" font-size="15" font-weight="bold" fill="#fff">4</text>
+    <text x="102" y="268" font-size="14" font-weight="bold" fill="#157a40">소량씩 자주 식사</text>
+    <text x="60" y="304" font-size="12.5" fill="#44525f">과식 시 피가 위장으로</text>
+    <text x="60" y="324" font-size="12.5" fill="#44525f">쏠려 혈압 더 떨어짐</text>
+
+    <rect x="284" y="236" width="232" height="132" rx="12" fill="#fff" stroke="#cdd9e3"/>
+    <circle cx="320" cy="272" r="17" fill="#1f8a4c"/><text x="320" y="278" text-anchor="middle" font-size="15" font-weight="bold" fill="#fff">5</text>
+    <text x="346" y="268" font-size="14" font-weight="bold" fill="#157a40">더위·아침 무리 피하기</text>
+    <text x="304" y="304" font-size="12.5" fill="#44525f">사우나·뜨거운 목욕 주의</text>
+    <text x="304" y="324" font-size="12.5" fill="#44525f">힘든 활동은 오후에</text>
+
+    <rect x="528" y="236" width="232" height="132" rx="12" fill="#fff" stroke="#cdd9e3"/>
+    <circle cx="564" cy="272" r="17" fill="#1f8a4c"/><text x="564" y="278" text-anchor="middle" font-size="15" font-weight="bold" fill="#fff">6</text>
+    <text x="590" y="268" font-size="14" font-weight="bold" fill="#157a40">침대 머리 높이기</text>
+    <text x="548" y="304" font-size="12.5" fill="#44525f">밤에 상체를 약간 높여</text>
+    <text x="548" y="324" font-size="12.5" fill="#44525f">아침 저혈압 완화</text>
+  </g>
+
+  <text x="400" y="392" text-anchor="middle" font-size="11.5" fill="#9a8a86">※ 생활 습관으로 부족하면 의료진과 약물(미도드린 등) 상의 · 정보 제공용</text>
+</svg>

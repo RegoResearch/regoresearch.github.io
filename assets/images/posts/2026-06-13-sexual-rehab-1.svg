@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" font-family="'Apple SD Gothic Neo','Malgun Gothic',sans-serif">
+  <rect width="800" height="380" fill="#f4f7fa"/>
+  <text x="400" y="42" text-anchor="middle" font-size="22" font-weight="bold" fill="#22364a">척수손상과 성·생식 — 핵심 정리</text>
+  <text x="400" y="68" text-anchor="middle" font-size="13" fill="#5a6c7d">의학적으로 충분히 도울 수 있는 정식 재활 영역입니다</text>
+
+  <!-- women card -->
+  <rect x="40" y="92" width="350" height="200" rx="14" fill="#fff" stroke="#d6a9c2"/>
+  <rect x="40" y="92" width="350" height="44" rx="14" fill="#b5557f"/>
+  <rect x="40" y="118" width="350" height="18" fill="#b5557f"/>
+  <text x="215" y="121" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">여성</text>
+  <text x="62" y="162" font-size="13" fill="#44525f">· 가임력은 대체로 <tspan font-weight="bold" fill="#9a3d68">보존</tspan></text>
+  <text x="62" y="188" font-size="13" fill="#44525f">· 월경: 1년 내 약 90% 회복</text>
+  <text x="62" y="214" font-size="13" fill="#44525f">· 임신·출산 가능 (연구상 88%)</text>
+  <text x="62" y="244" font-size="12.5" fill="#9a3d68" font-weight="bold">⚠ 분만 중 자율신경 반사부전 주의</text>
+  <text x="62" y="268" font-size="12" fill="#7a8a99">→ 전문 산과·다학제 관리 필요</text>
+
+  <!-- men card -->
+  <rect x="410" y="92" width="350" height="200" rx="14" fill="#fff" stroke="#9cb6d6"/>
+  <rect x="410" y="92" width="350" height="44" rx="14" fill="#3a6ea5"/>
+  <rect x="410" y="118" width="350" height="18" fill="#3a6ea5"/>
+  <text x="585" y="121" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">남성</text>
+  <text x="432" y="162" font-size="13" fill="#44525f">· 발기부전: PDE5 억제제 1차 (~79%)</text>
+  <text x="432" y="188" font-size="13" fill="#44525f">· 생식: 사정장애로 가임력 저하</text>
+  <text x="432" y="214" font-size="13" fill="#44525f">· PVS·EEJ + 보조생식술</text>
+  <text x="432" y="240" font-size="13" fill="#44525f">  → 60% 이상 임신 가능</text>
+  <text x="432" y="268" font-size="12" fill="#b03a2e" font-weight="bold">⚠ 질산염 복용 시 PDE5 억제제 금기</text>
+
+  <rect x="40" y="306" width="720" height="44" rx="10" fill="#eef3f8"/>
+  <text x="400" y="333" text-anchor="middle" font-size="12.5" fill="#33485c">궁금한 점은 부끄러워 말고 의료진에게 — 성재활은 재활의 정당한 한 부분입니다 (정보 제공용)</text>
+</svg>
