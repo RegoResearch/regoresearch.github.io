@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 430" font-family="'Apple SD Gothic Neo','Malgun Gothic',sans-serif">
+  <rect width="800" height="430" fill="#f4f7fa"/>
+  <text x="400" y="42" text-anchor="middle" font-size="22" font-weight="bold" fill="#22364a">척수손상 후 통증, 두 가지로 나뉩니다</text>
+  <text x="400" y="68" text-anchor="middle" font-size="13" fill="#5a6c7d">종류를 구분하는 것이 치료의 출발점</text>
+
+  <!-- Left: nociceptive -->
+  <rect x="40" y="90" width="350" height="300" rx="14" fill="#ffffff" stroke="#9cc3df"/>
+  <rect x="40" y="90" width="350" height="46" rx="14" fill="#2c7fb8"/>
+  <rect x="40" y="118" width="350" height="18" fill="#2c7fb8"/>
+  <text x="215" y="120" text-anchor="middle" font-size="17" font-weight="bold" fill="#fff">통각성 통증</text>
+  <text x="215" y="162" text-anchor="middle" font-size="13" fill="#1f5e96">조직이 실제로 무리·손상되어</text>
+  <text x="215" y="182" text-anchor="middle" font-size="13" fill="#1f5e96">신경이 '정확히' 보고하는 통증</text>
+  <text x="64" y="220" font-size="13" font-weight="bold" fill="#33485c">· 근골격: 어깨·팔 (휠체어·이동)</text>
+  <text x="64" y="248" font-size="13" font-weight="bold" fill="#33485c">· 내장: 방광·장 등 복부</text>
+  <text x="64" y="286" font-size="12.5" fill="#5a6c7d">느낌: 쑤심, 욱신거림, 뻐근함</text>
+  <rect x="64" y="304" width="302" height="64" rx="9" fill="#eaf3fb"/>
+  <text x="80" y="328" font-size="12.5" fill="#1f5e96">치료 방향:</text>
+  <text x="80" y="350" font-size="12.5" fill="#44525f">자세 교정 · 물리치료 · 소염제</text>
+  <text x="80" y="368" font-size="11.5" fill="#7a8a99">→ 원인을 고치면 호전</text>
+
+  <!-- Right: neuropathic -->
+  <rect x="410" y="90" width="350" height="300" rx="14" fill="#ffffff" stroke="#e0a98f"/>
+  <rect x="410" y="90" width="350" height="46" rx="14" fill="#c0562b"/>
+  <rect x="410" y="118" width="350" height="18" fill="#c0562b"/>
+  <text x="585" y="120" text-anchor="middle" font-size="17" font-weight="bold" fill="#fff">신경병성 통증</text>
+  <text x="585" y="162" text-anchor="middle" font-size="13" fill="#a8431f">손상된 신경계 자체가</text>
+  <text x="585" y="182" text-anchor="middle" font-size="13" fill="#a8431f">'잘못된' 통증 신호를 만듦</text>
+  <text x="434" y="220" font-size="13" font-weight="bold" fill="#33485c">· 손상부위(at-level): 띠 모양</text>
+  <text x="434" y="248" font-size="13" font-weight="bold" fill="#33485c">· 손상아래(below-level)</text>
+  <text x="434" y="286" font-size="12.5" fill="#5a6c7d">느낌: 작열감·전기·저림·시림</text>
+  <rect x="434" y="304" width="302" height="64" rx="9" fill="#fbece5"/>
+  <text x="450" y="328" font-size="12.5" fill="#a8431f">치료 방향:</text>
+  <text x="450" y="350" font-size="12.5" fill="#44525f">전용 약(프레가발린·가바펜틴)</text>
+  <text x="450" y="368" font-size="11.5" fill="#7a8a99">+ 운동·수면·심리·신경자극 (일반 진통제 ✕)</text>
+
+  <text x="400" y="414" text-anchor="middle" font-size="11.5" fill="#9a8a86">※ 약물은 모두 의사의 처방·조절 영역 · 정보 제공용</text>
+</svg>
